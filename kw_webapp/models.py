@@ -115,6 +115,9 @@ class Profile(models.Model):
     auto_advance_on_success_delay_milliseconds = models.PositiveIntegerField(
         default=1000
     )
+
+    repeat_until_correct = models.BooleanField(default=False)
+
     auto_expand_answer_on_success = models.BooleanField(default=True)
     auto_expand_answer_on_failure = models.BooleanField(default=False)
     info_detail_level_on_success = models.PositiveIntegerField(

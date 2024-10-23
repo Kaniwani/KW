@@ -54,6 +54,7 @@ class TestProfileApi(APITestCase):
         self.assertIsNotNone(data["show_kanji_svg_stroke_order"])
         self.assertIsNotNone(data["show_kanji_svg_grid"])
         self.assertIsNotNone(data["kanji_svg_draw_speed"])
+        self.assertIsNotNone(data["repeat_until_correct"])
 
     def test_updating_profile_triggers_srs_correctly(self):
         self.client.force_login(user=self.user)

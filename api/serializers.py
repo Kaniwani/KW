@@ -191,6 +191,7 @@ class ProfileSerializer(serializers.ModelSerializer):
             "info_detail_level_on_failure",
             "order_reviews_by_level",
             "burn_reviews",
+            "repeat_until_correct"
         )
 
         read_only_fields = (
